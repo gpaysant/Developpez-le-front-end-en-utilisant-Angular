@@ -1,29 +1,55 @@
 # OlympicGamesStarter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+This application shows informations about previous Olympic games. (number of medals, number of athletes, ...)
 
-Don't forget to install your node_modules before starting (`npm install`).
+Graphic charts are available on page to be more interactive.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Build
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+* NodeJs
+  ```sh
+  https://nodejs.org/en/download
+  ```
+* Angular
+  ```sh
+  npm install -g @angular/cli
+  ```
+  
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ 
+* Install NPM packages
+  ```sh
+  npm install
+  ```
+ 
+* Builds and serves application
+  ```sh
+  ng serve
+  ```
 
-## Where to start
+## Usage
 
-As you can see, an architecture has already been defined for the project. It is just a suggestion, you can choose to use your own. The predefined architecture includes (in addition to the default angular architecture) the following:
+1. Navigate on : http://localhost:4200/. The main page shows dashboard by default and can be accessed as well by http://localhost:4200/dashboard.
 
-- `components` folder: contains every reusable components
-- `pages` folder: contains components used for routing
-- `core` folder: contains the business logic (`services` and `models` folders)
+2. By clicking on country in chart pie, the detail page displays. The page is displayed on this url : http://localhost:4200/detail:ID.
 
-I suggest you to start by understanding this starter code. Pay an extra attention to the `app-routing.module.ts` and the `olympic.service.ts`.
+## Libraries used
 
-Once mastered, you should continue by creating the typescript interfaces inside the `models` folder. As you can see I already created two files corresponding to the data included inside the `olympic.json`. With your interfaces, improve the code by replacing every `any` by the corresponding interface.
+* [ngx-charts](https://www.npmjs.com/package/@swimlane/ngx-charts) - Graph visualization library for Angular
 
-You're now ready to implement the requested features.
+* [ngx-spinner](https://www.npmjs.com/package/ngx-spinner) -  is a loading (spinner) component library with more than 50 different types. 
 
-Good luck!
+
+<!-- CONTACT -->
+## Contact
+
+Paysant Gérald - geraldpaysant@gmail.com
+
+Project Link: [https://github.com/gpaysant/Developpez-le-back-end-en-utilisant-Java-et-Spring](https://github.com/gpaysant/Developpez-le-back-end-en-utilisant-Java-et-Spring)

@@ -1,13 +1,20 @@
+<app-header
+  [title]="country"
+  [infos]="infosHeaders"
+></app-header>
 <div class="body">
-  <ngx-charts-bar-vertical
-    [view]="[1000,400]"
-    [results]="single"
+  <ngx-spinner *ngIf="dataChart?.length==0" [fullScreen]="true" type="ball-scale-multiple" size="medium" >Loading</ngx-spinner>
+
+  <ngx-charts-bar-vertical *ngIf="dataChart?.length!=0"
+    [view]="view"
+    [results]="dataChart"
     [gradient]="true"
     [legend]="false"
     [xAxis]="true"
     [yAxis]="true"
     [showXAxisLabel]="true"
     [xAxisLabel]="'Dates'"
+    (window:resize)="onResize($event)"
   >
   </ngx-charts-bar-vertical>
 </div>
